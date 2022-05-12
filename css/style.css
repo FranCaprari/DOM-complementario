@@ -1,0 +1,57 @@
+.nav-logo {
+    width: 6rem; }
+  
+  a {
+    text-decoration: none;
+    color: #171717; }
+  
+  a:hover {
+    color: red; }
+  
+  .menu {
+    font-size: 1.5rem; }
+
+ .productos__titulo{
+    color: red;
+    font-style: oblique;
+    text-align: center;
+ }
+ .carta{
+     display:flex;
+     margin: 0 200px;
+     text-align: center;
+     align-items: center;
+ }
+ .card-img-top{
+     width: 100%;
+     height: 100%;
+ }
+    footer {
+        border-top: solid 2px; }
+      
+      .footer {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "telefono ig horarios"
+       "copy copy copy";
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem 5rem; }
+        .footer__copy {
+          border-top: solid 0.1rem;
+          grid-area: copy;
+          text-align: center; }
+      
+      #footer__redes__ig {
+        font-size: 1.5rem;
+        color: black; }
+        #footer__redes__ig:hover {
+          color: red; }
+      
+      #footer__redes__git {
+        font-size: 1.5rem;
+        color: black; }
+        #footer__redes__git:hover {
+          color: blue; }  
