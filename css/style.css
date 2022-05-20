@@ -22,10 +22,22 @@
      text-align: center;
      align-items: center;
  }
+ .card{
+   height: 700px;
+ }
  .card-img-top{
      width: 100%;
-     height: 100%;
+     height: 500px;
  }
+ .modalBtn{
+   background-color:red;
+ }
+ .modalBtn:hover{
+   background-color: black;
+ }
+.imagenCarrito{
+  width: 25px;
+}
     footer {
         border-top: solid 2px; }
       

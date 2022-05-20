@@ -17,7 +17,7 @@
     rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="icon" href="../imagenes/logo2.png" />
+  <link rel="icon" href="" />
   <title>BodyBest - Proteinas</title>
   <meta name="keywords"
     content="Suplementos en cordoba, proteina, comprar suplementos en ciudad de cordoba, comprar proteina en ciudad de cordoba, productos para aumentar masa muscular, suplementacion deportiva cordoba, proteinas ultra tech">
@@ -65,12 +65,51 @@
       </div>
     </nav>
   </header>
-    <h1 class="productos__titulo">PROTEINAS</h1>
-    <div class="container">
-      <div id="productos" class="d-flex row flex-wrap carta">
+  <h1 class="productos__titulo">PROTEINAS</h1>
+  <div class="productos__cabecera">
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary modalBtn" data-bs-toggle="modal" data-bs-target="#exampleModal" id="btnVerCarrito">
+      Carrito
+    </button>
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" >Carrito de compras</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <table class="table table-dark table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Producto</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Precio unitario</th>
+                    <th scope="col">Precio total</th>
+                  </tr>
+                </thead>
+                <tbody id="tablaCarrito">
+                </tbody>
+              </table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" id="btnVaciar" data-bs-dismiss="modal">Vaciar</button>
+            <h2 id="subtotal"> </h2>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
+            <button type="button" class="btn btn-primary" id="pago">Pagar</button>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
+  <div class="container">
+    <div id="productos" class="d-flex row flex-wrap carta">
+
+    </div>
+  </div>
 
   <footer class="footer">
     <div class="footer__telefono">
@@ -100,7 +139,8 @@
     AOS.init();
   </script>
 </body>
-
+<script src="productos.js"></script>
 <script src="index.js">
 </script>
+
 </html>
