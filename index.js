@@ -21,18 +21,6 @@ const construirCarta = (item) => {
       </div>`
     );
 }
-const crearTabla = (item) => {
-  return( `
-      <tr>
-      <th scope="row" >${item.id}</th>
-      <td>${item.nombre}</td>
-      <td>${item.precio}</td>
-      <td>${item.cantidad}</td>
-      <td><img src="${item.imagen}" class="imagenCarrito"></td>
-      <td><button onclick="eliminarCarrito(${item.id})">Eliminar</button></td>
-      </tr>
-  `)
-}
 
 const cargarProductos = (info, nodo, tabla) =>{
     let acumulador = "";
@@ -70,6 +58,7 @@ const getCarrito = (item) => {
       <td>${el.cantidad}</td>
       <td>$${el.precio}</td>
       <td>$${el.precio *el.cantidad}</td>
+      <td><img src="${el.imagen}" class="imagenCarrito"></td>
       </tr>
       `
   )
