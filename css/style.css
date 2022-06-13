@@ -16,14 +16,14 @@
     font-style: oblique;
     text-align: center;
  }
- .carta{
-     display:flex;
-     margin: 0 200px;
-     text-align: center;
-     align-items: center;
+ .productos__cabecera{
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
  }
- .card{
-   height: 700px;
+ .card img{
+   height: 400px;
+   width: 100%;
  }
  .card-img-top{
      width: 100%;
@@ -37,6 +37,93 @@
  }
 .imagenCarrito{
   width: 25px;
+}
+.carta{
+  margin:0;
+  display:grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "prod1 prod2 prod3 prod4"
+                       "prod5 prod6 prod7 prod8";
+  row-gap: 2rem;
+
+  justify-items: center;
+  justify-content: center;
+  padding-bottom: 2rem;
+  text-align: center;
+  align-items: center;
+}
+.producto1{
+  grid-area:prod1;
+}
+.producto2{
+  grid-area:prod2;
+}
+.producto3{
+  grid-area:prod3;
+}
+.producto4{
+  grid-area:prod4;
+}
+.producto5{
+  grid-area:prod5;
+}
+.producto6{
+  grid-area:prod6;
+}
+.producto7{
+  grid-area:prod7;
+}
+.producto8{
+  grid-area:prod8;
+}
+
+@media only screen and (max-width: 600px){
+  .modalBtn{
+    position: relative;
+  }
+  .carta{
+    display:grid;
+    grid-template-columns: 80%;
+    grid-template-areas:
+                             "prod1"
+                             "prod2"
+                             "prod3"
+                             "prod4"
+                             "prod5"
+                             "prod6"
+                             "prod7"
+                             "prod8";
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 2rem;
+    padding-bottom: 2rem;
+    justify-items: center;
+  }
+  .producto1{
+    grid-area:prod1;
+  }
+  .producto2{
+    grid-area:prod2;
+  }
+  .producto3{
+    grid-area:prod3;
+  }
+  .producto4{
+    grid-area:prod4;
+  }
+  .producto5{
+    grid-area:prod5;
+  }
+  .producto6{
+    grid-area:prod6;
+  }
+  .producto7{
+    grid-area:prod7;
+  }
+  .producto8{
+    grid-area:prod8;
+  }
+
 }
     footer {
         border-top: solid 2px; }

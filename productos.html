@@ -78,7 +78,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" >Carrito de compras</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button type="button" class="btn-close modalCarrito" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
               <table class="table table-dark table-striped">
@@ -100,14 +100,14 @@
             <button type="button" class="btn btn-secondary" id="btnVaciar" data-bs-dismiss="modal">Vaciar</button>
             <h2 id="subtotal"> </h2>
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
-            <button type="button" class="btn btn-primary" id="pago">Pagar</button>
+            <button type="button" class="btn btn-primary" id="botonPagar" data-bs-dismiss="modal">Pagar</button>
           </div>
         </div>
       </div>
     </div>
   </div>
   <div class="container">
-    <div id="productos" class="d-flex row flex-wrap carta">
+    <div id="productos" class="carta">
 
     </div>
   </div>
@@ -140,7 +140,8 @@
     AOS.init();
   </script>
 </body>
-<script src="productos.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="productos.json"></script>
 <script src="index.js">
 </script>
 
